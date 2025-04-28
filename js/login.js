@@ -47,10 +47,10 @@ function handleProfessorLogin(username, password) {
   const professors = [
     { department: 'Computer Science', username: 'csprof', password: 'cs123' },
     { department: 'Electronics', username: 'ecprof', password: 'ec123' },
-    { department: 'Mechanical', username: 'mechprof', password: 'mech123' },
-    { department: 'Civil', username: 'civilprof', password: 'civil123' },
-    { department: 'Electrical', username: 'eeprof', password: 'ee123' },
-    { department: 'Business', username: 'bprof', password: 'b123' }
+    { department: 'Mechanical Engineering', username: 'mechprof', password: 'mech123' },
+    { department: 'Civil Engineering', username: 'civilprof', password: 'civil123' },
+    { department: 'Electrical Engineering', username: 'eeprof', password: 'ee123' },
+    { department: 'Business Administration', username: 'bprof', password: 'b123' }
   ];
 
   const professorFound = professors.find(prof => prof.username === username && prof.password === password);
