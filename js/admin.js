@@ -125,10 +125,10 @@ function autoPopulateStudents() {
   const departments = [
     "Computer Science",
     "Electronics",
-    "Mechanical Engineering",
-    "Civil Engineering",
-    "Electrical Engineering",
-    "Business Administration"
+    "Mechanical",
+    "Civil",
+    "Electrical",
+    "Business"
   ];
 
   const sampleNames = [
