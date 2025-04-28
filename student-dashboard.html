@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="css/student-dashboard.css">
+</head>
+
+<body class="dark-theme">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Rajalakshmi Engineering College - Student Dashboard</div>
+      <div class="nav-links">
+        <a href="#" onclick="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="dashboardContent">
+    <h1>Welcome, <span id="studentName"></span>!</h1>
+
+    <div id="studentInfo">
+      <p><strong>Email:</strong> <span id="studentEmail"></span></p>
+      <p><strong>Department:</strong> <span id="studentDepartment"></span></p>
+      <p><strong>Attendance:</strong> <span id="studentAttendance"></span></p>
+      <p><strong>Average Marks:</strong> <span id="studentMarks"></span></p>
+      <p><strong>GPA:</strong> <span id="studentGPA"></span></p>
+    </div>
+
+    <div id="statusMessage" class="status-message"></div>
+
+    <h2>Your Performance Chart</h2>
+    <div class="chart-container">
+      <canvas id="performanceChart" width="400" height="200"></canvas>
+    </div>
+
+    <div class="buttons">
+      <button class="action-btn" onclick="openChangePasswordModal()">Change Password</button>
+      <button class="action-btn" onclick="downloadReport()">Download Report Card</button>
+    </div>
+  </div>
+
+  <!-- Modal for changing password -->
+  <div id="passwordModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePasswordModal()">&times;</span>
+      <h2>Change Password</h2>
+      <input type="password" id="oldPassword" placeholder="Old Password">
+      <input type="password" id="newPassword" placeholder="New Password">
+      <input type="password" id="confirmPassword" placeholder="Confirm New Password">
+      <button onclick="changePassword()" class="save-btn">Save Changes</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>Location: Knowledge City, India | 📧 Email: info@mycollege.edu</p>
+      <p>© 2025 My College. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="js/student-dashboard.js"></script>
+  <script src="subjects.js"></script>
+</body>
+</html>

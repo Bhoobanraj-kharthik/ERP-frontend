@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Console</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body class="dark-theme">
+
+  <div class="admin-container">
+    <header>
+      <h1>Master Admin Console - REC</h1>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <section class="master-actions">
+      <h2>Master Actions</h2>
+      <button onclick="deleteAllStudents()" class="danger-btn">Delete All Students</button>
+      <button onclick="downloadUsersData()" class="action-btn">Download Users Data</button>
+      <button onclick="downloadReports()" class="action-btn">Download Report</button>
+      <button onclick="autoPopulateStudents()" class="action-btn">Auto Populate Students(for demo)</button>
+    </section>
+
+    <section class="admin-controls">
+      <h2>Student Management</h2>
+      <button id="showAddStudentForm" class="action-btn">Add Student</button>
+
+      <div id="addStudentForm" class="add-student-form" style="display: none;">
+        <h3>Add New Student</h3>
+        <input type="text" id="newStudentName" placeholder="Full Name" required>
+        <input type="email" id="newStudentEmail" placeholder="Email Address" required>
+        <input type="password" id="newStudentPassword" placeholder="Password" required>
+        
+        <select id="newStudentDepartment" required>
+          <option value="">Select Department</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Mechanical Engineering">Mechanical Engineering</option>
+          <option value="Civil Engineering">Civil Engineering</option>
+          <option value="Electrical Engineering">Electrical Engineering</option>
+          <option value="Business Administration">Business Administration</option>
+        </select>
+
+        <div class="form-actions">
+          <button id="addStudentButton" class="action-btn">Add Student</button>
+          <button id="cancelAddStudent" type="button" class="cancel-btn">Cancel</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="departments-summary">
+      <h2>Departments Overview</h2>
+      <div id="departmentsContainer" class="departments-grid">
+        <!-- Department cards will be loaded here -->
+      </div>
+    </section>
+
+    <section class="system-info">
+      <h2>System Information</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Total Students</h3>
+          <p id="totalStudents">0</p>
+        </div>
+        <div class="info-card">
+          <h3>Total Professors</h3>
+          <p id="totalProfessors">6</p> <!-- Fixed -->
+        </div>
+        <div class="info-card">
+          <h3>Total Users</h3>
+          <p id="totalUsers">0</p>
+        </div>
+        <div class="info-card">
+          <h3>Storage Used</h3>
+          <p id="storageUsed">0 KB</p>
+        </div>
+        <div class="info-card">
+          <h3>Login Stats</h3>
+          <p id="loginStats">No data</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="js/admin.js"></script>
+  <script src="subjects.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/patterns/bg-pattern.svg'); /* optional */
+    background-repeat: repeat;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+  }
+  
+  input, select, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #2a2a2a;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  button {
+    background: #3f51b5;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background: #5c6bc0;
+  }
+  
+  a {
+    color: #90caf9;
+    text-decoration: none;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  .students-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .students-table th, .students-table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+  }
+  
+  .students-table th {
+    background-color: #222;
+  }
+  
+  .students-table td input {
+    width: 60px;
+    background-color: #333;
+    color: #eee;
+    border: none;
+    padding: 5px;
+    text-align: center;
+  }
+  .logout-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Yellow */
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .logout-button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+  }
+  

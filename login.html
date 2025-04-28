@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="dark-theme">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Rajalakshmi Engineering College</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LOGIN FORM -->
+  <main class="login-container">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="username">Email/Username</label>
+      <input type="text" id="username" placeholder="Enter your email or username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <label for="role">Select Role</label>
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="student">Student</option>
+        <option value="professor">Professor</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>Location: Knowledge City, India | 📧 Email: info@mycollege.edu</p>
+      <p>© 2025 My College. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

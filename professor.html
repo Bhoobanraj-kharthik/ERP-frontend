@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professor Dashboard</title>
+  <link rel="stylesheet" href="css/professor.css">
+</head>
+
+<body class="dark-theme">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Rajalakshmi Engineering College - Professor Panel</div>
+      <div class="nav-links">
+        <a href="#" onclick="logout()">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Professor Dashboard</h1>
+
+    <section class="students-section">
+      <h2>My Students</h2>
+      <table id="studentsTable" class="students-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Avg Marks</th>
+            <th>GPA</th>
+            <th>Attendance (%)</th>
+          </tr>
+        </thead>
+        <tbody id="studentsBody">
+          <!-- Students will appear here -->
+        </tbody>
+      </table>
+    </section>   
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>Location: Knowledge City, India | 📧 Email: info@mycollege.edu</p>
+      <p>© 2025 My College. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/professor.js"></script>
+  <script src="subjects.js"></script>
+</body>
+</html>

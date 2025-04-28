@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Details</title>
+  <link rel="stylesheet" href="css/student-details.css">
+</head>
+
+<body class="dark-theme">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Rajalakshmi Engineering College - Student Details</div>
+      <div class="nav-links">
+        <a href="#" onclick="goBack()">Back</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 id="studentName">Student Details</h1>
+
+    <div id="studentInfo">
+      <p><strong>Email:</strong> <span id="studentEmail"></span></p>
+      <p><strong>Department:</strong> <span id="studentDepartment"></span></p>
+      <p><strong>Attendance:</strong> <input type="number" id="studentAttendance" min="0" max="100">%</p>
+    </div>
+
+    <h2>Subjects</h2>
+    <table id="subjectsTable" class="subjects-table">
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody id="subjectsBody">
+        <!-- Subjects appear here -->
+      </tbody>
+    </table>
+
+    <button class="save-btn" onclick="saveStudentData()">Save Changes</button>
+
+    <h2>Performance Chart</h2>
+    <div class="chart-container">
+      <canvas id="performanceChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+        <p>Location: Knowledge City, India | 📧 Email: info@mycollege.edu</p>
+        <p>© 2025 My College. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/student-details.js"></script>
+  <script src="subjects.js"></script>
+</body>
+</html>
